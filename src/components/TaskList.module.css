@@ -1,0 +1,66 @@
+.list {
+	margin: 2em;
+	background-color: rgb(21, 53, 42);
+	color: white;
+	text-align: center;
+}
+.completed {
+	text-decoration: line-through;
+}
+.noncompleted{
+	text-decoration: none;
+}
+.list ul {
+	list-style: none;
+	/* background-color: red; */
+}
+.list li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 1.45em;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	width: 95%;
+	margin: 0 auto;
+	margin-right: auto;
+}
+.actions {
+	/* padding: 1em; */
+	display: flex;
+	align-items: end;
+	/* align-items: baseline; */
+	margin: 0.5em;
+	align-items: center;
+}
+.actions button {
+	background-color: red;
+	border: none;
+	border-radius: 50%;
+	margin-left: 0.75em;
+	font-weight: bold;
+	font-size: 0.5rem;
+	cursor: pointer;
+}
+
+.checkbox {
+	background-color: white;
+	border-radius: 50%;
+	vertical-align: middle;
+	border: 1px solid #ddd;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: pointer;
+}
+.checkbox:checked {
+	background-color: green;
+}
+.actions button,
+.checkbox {
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
